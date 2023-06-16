@@ -23,9 +23,9 @@ export default function Header() {
         as="li"
         variant="small"
         color="blue-gray"
-        className="font-arial p-1 font-normal"
+        className="font-sans p-1 font-normal"
       >
-        <a href="#" className="flex items-center text-base font-arial">
+        <a href="#" className="flex items-center text-base font-sansl">
           Accueil
         </a>
       </Typography>
@@ -33,9 +33,9 @@ export default function Header() {
         as="li"
         variant="small"
         color="blue-gray"
-        className="font-arial p-1 font-normal"
+        className="font-sans p-1 font-normal"
       >
-        <a href="#" className="flex items-center text-base font-arial">
+        <a href="#" className="flex items-center text-base font-sans">
           Produits
         </a>
       </Typography>
@@ -43,9 +43,9 @@ export default function Header() {
         as="li"
         variant="small"
         color="blue-gray"
-        className="font-arial p-1 font-normal"
+        className="font-sans p-1 font-normal"
       >
-        <a href="#" className="flex items-center text-base font-arial">
+        <a href="#" className="flex items-center text-base font-sans">
           Mon profil
         </a>
       </Typography>
@@ -59,7 +59,7 @@ export default function Header() {
           <Typography
             as="a"
             href="#"
-            className="font-arial mr-4 cursor-pointer py-1.5 font-bold text-xl"
+            className="mr-4 cursor-pointer py-1.5 font-bold text-xl"
           >
             GreenStock
           </Typography>
@@ -70,7 +70,7 @@ export default function Header() {
               size="sm"
               className="hidden lg:inline-block bg-amber-400 text-black text-base"
             >
-              <span className="font-arial">Mon panier</span>
+              <span className="">Mon panier</span>
             </Button>
             <IconButton
               variant="text"
@@ -113,7 +113,7 @@ export default function Header() {
         </div>
         <MobileNav open={openNav}>
           {navList}
-          <Button variant="filled" size="sm" fullWidth className="mb-2 bg-amber-400 text-black text-base">
+          <Button variant="filled" size="sm" fullWidth className="font-sans mb-2 bg-amber-400 text-black text-base">
             <span>Mon panier</span>
           </Button>
         </MobileNav>
