@@ -1,140 +1,75 @@
-import {
-    Card,
-    CardHeader,
-    CardBody,
-    CardFooter,
-    Typography,
-    Button,
-  } from "@material-tailwind/react";
-   
-  export default function BestSeller() {
-    return (
-      <>
-      <h1 className="font-arial text-4xl font-bold flex justify-center mt-8">Nos favoris</h1>
-      <div className="flex justify-center items-center">
-      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-      <Card className="w-96 mt-8 mb-8">
-        <CardHeader shadow={false} floated={false} className="h-96">
-          <img 
-            src="https://images.unsplash.com/photo-1629367494173-c78a56567877?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=927&q=80" 
-            className="w-full h-full object-cover"
-          />
-        </CardHeader>
-        <CardBody>
-          <div className="flex items-center justify-between mb-2">
-            <Typography color="blue-gray" className="font-medium font-arial">
-              Apple AirPods
-            </Typography>
-            <Typography color="blue-gray" className="font-medium font-arial">
-              $95.00
-            </Typography>
-          </div>
-          <Typography variant="small" color="gray" className="font-arial opacity-75">
-            With plenty of talk and listen time, voice-activated Siri access, and an available wireless charging case.
-          </Typography>
-        </CardBody>
-        <CardFooter className="pt-0">
-          <Button
-            ripple={false}
-            fullWidth={true}
-            className="font-arial bg-blue-gray-900/10 text-blue-gray-900 shadow-none hover:shadow-none hover:scale-105 focus:shadow-none focus:scale-105 active:scale-100"
-          >
-            Add to Cart
-          </Button>
-        </CardFooter>
-      </Card>
-      <Card className="w-96 mt-8 mb-8">
-        <CardHeader shadow={false} floated={false} className="h-96">
-          <img 
-            src="https://images.unsplash.com/photo-1629367494173-c78a56567877?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=927&q=80" 
-            className="w-full h-full object-cover"
-          />
-        </CardHeader>
-        <CardBody>
-          <div className="flex items-center justify-between mb-2">
-            <Typography color="blue-gray" className="font-medium font-arial">
-              Apple AirPods
-            </Typography>
-            <Typography color="blue-gray" className="font-medium font-arial">
-              $95.00
-            </Typography>
-          </div>
-          <Typography variant="small" color="gray" className="font-normal font-arial opacity-75">
-            With plenty of talk and listen time, voice-activated Siri access, and an available wireless charging case.
-          </Typography>
-        </CardBody>
-        <CardFooter className="pt-0">
-          <Button
-            ripple={false}
-            fullWidth={true}
-            className="font-arial bg-blue-gray-900/10 text-blue-gray-900 shadow-none hover:shadow-none hover:scale-105 focus:shadow-none focus:scale-105 active:scale-100"
-          >
-            Add to Cart
-          </Button>
-        </CardFooter>
-      </Card>
-      <Card className="w-96 mt-8 mb-8">
-        <CardHeader shadow={false} floated={false} className="h-96">
-          <img 
-            src="https://images.unsplash.com/photo-1629367494173-c78a56567877?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=927&q=80" 
-            className="w-full h-full object-cover"
-          />
-        </CardHeader>
-        <CardBody>
-          <div className="flex items-center justify-between mb-2">
-            <Typography color="blue-gray" className="font-medium font-arial">
-              Apple AirPods
-            </Typography>
-            <Typography color="blue-gray" className="font-medium font-arial">
-              $95.00
-            </Typography>
-          </div>
-          <Typography variant="small" color="gray" className="font-normal font-arial opacity-75">
-            With plenty of talk and listen time, voice-activated Siri access, and an available wireless charging case.
-          </Typography>
-        </CardBody>
-        <CardFooter className="pt-0">
-          <Button
-            ripple={false}
-            fullWidth={true}
-            className="font-arial bg-blue-gray-900/10 text-blue-gray-900 shadow-none hover:shadow-none hover:scale-105 focus:shadow-none focus:scale-105 active:scale-100"
-          >
-            Add to Cart
-          </Button>
-        </CardFooter>
-      </Card>
-      <Card className="w-96 mt-8 mb-8">
-        <CardHeader shadow={false} floated={false} className="h-96">
-          <img 
-            src="https://images.unsplash.com/photo-1629367494173-c78a56567877?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=927&q=80" 
-            className="w-full h-full object-cover"
-          />
-        </CardHeader>
-        <CardBody>
-          <div className="flex items-center justify-between mb-2">
-            <Typography color="blue-gray" className="font-medium font-arial">
-              Apple AirPods
-            </Typography>
-            <Typography color="blue-gray" className="font-medium font-arial">
-              $95.00
-            </Typography>
-          </div>
-          <Typography variant="small" color="gray" className="font-normal font-arial opacity-75">
-            With plenty of talk and listen time, voice-activated Siri access, and an available wireless charging case.
-          </Typography>
-        </CardBody>
-        <CardFooter className="pt-0">
-          <Button
-            ripple={false}
-            fullWidth={true}
-            className="font-arial bg-blue-gray-900/10 text-blue-gray-900 shadow-none hover:shadow-none hover:scale-105 focus:shadow-none focus:scale-105 active:scale-100"
-          >
-            Add to Cart
-          </Button>
-        </CardFooter>
-      </Card>
-      </div>
-      </div>
-      </>
-    );
+/*
+  This example requires some changes to your config:
+  
+  ```
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/aspect-ratio'),
+    ],
   }
+  ```
+*/
+const products = [
+  {
+    id: 1,
+    name: 'Earthen Bottle',
+    href: '#',
+    price: '$48',
+    imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-01.jpg',
+    imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
+  },
+  {
+    id: 2,
+    name: 'Nomad Tumbler',
+    href: '#',
+    price: '$35',
+    imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg',
+    imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
+  },
+  {
+    id: 3,
+    name: 'Focus Paper Refill',
+    href: '#',
+    price: '$89',
+    imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-03.jpg',
+    imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
+  },
+  {
+    id: 4,
+    name: 'Machined Mechanical Pencil',
+    href: '#',
+    price: '$35',
+    imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-04.jpg',
+    imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
+  },
+  // More products...
+]
+
+export default function BestSeller() {
+  return (
+    <div className="bg-white">
+      <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+      <h2 className="text-2xl font-bold text-gray-900 mb-4">Nos meilleures produits</h2>
+
+        <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+          {products.map((product) => (
+            <a key={product.id} href={product.href} className="group">
+              <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                <img
+                  src={product.imageSrc}
+                  alt={product.imageAlt}
+                  className="h-full w-full object-cover object-center group-hover:opacity-75"
+                />
+              </div>
+              <h3 className="mt-4 text-sm text-gray-700">{product.name}</h3>
+              <p className="mt-1 text-lg font-medium text-gray-900">{product.price}</p>
+            </a>
+          ))}
+        </div>
+      </div>
+    </div>
+  )
+}
