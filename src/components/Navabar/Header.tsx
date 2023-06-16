@@ -5,7 +5,6 @@ import {
   Typography,
   Button,
   IconButton,
-  Card,
 } from "@material-tailwind/react";
  
 export default function Header() {
@@ -24,9 +23,9 @@ export default function Header() {
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-normal"
+        className="font-arial p-1 font-normal"
       >
-        <a href="#" className="flex items-center text-base">
+        <a href="#" className="flex items-center text-base font-arial">
           Accueil
         </a>
       </Typography>
@@ -34,9 +33,9 @@ export default function Header() {
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-normal"
+        className="font-arial p-1 font-normal"
       >
-        <a href="#" className="flex items-center text-base">
+        <a href="#" className="flex items-center text-base font-arial">
           Produits
         </a>
       </Typography>
@@ -44,9 +43,9 @@ export default function Header() {
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-normal"
+        className="font-arial p-1 font-normal"
       >
-        <a href="#" className="flex items-center text-base">
+        <a href="#" className="flex items-center text-base font-arial">
           Mon profil
         </a>
       </Typography>
@@ -60,7 +59,7 @@ export default function Header() {
           <Typography
             as="a"
             href="#"
-            className="mr-4 cursor-pointer py-1.5 font-bold text-xl"
+            className="font-arial mr-4 cursor-pointer py-1.5 font-bold text-xl"
           >
             GreenStock
           </Typography>
@@ -71,7 +70,7 @@ export default function Header() {
               size="sm"
               className="hidden lg:inline-block bg-amber-400 text-black text-base"
             >
-              <span>Mon panier</span>
+              <span className="font-arial">Mon panier</span>
             </Button>
             <IconButton
               variant="text"
