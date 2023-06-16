@@ -1,29 +1,29 @@
-import { ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon } from '@heroicons/react/24/outline'
+import { HandThumbUpIcon, BoltIcon, GlobeAltIcon, HeartIcon } from '@heroicons/react/24/outline'
 
 const features = [
   {
     name: 'Formule Énergisante',
     description:
       `Un mélange de vitamines et de nutriments conçu pour dynamiser votre journée.`,
-    icon: CloudArrowUpIcon,
+    icon: BoltIcon,
   },
   {
     name: 'Soutien du Système Immunitaire',
     description:
       `Apporte une variété de vitamines essentielles pour renforcer votre système immunitaire.`,
-    icon: LockClosedIcon,
+    icon: HeartIcon,
   },
   {
     name: `Amélioration de l'Humeur`,
     description:
       `Des ingrédients soigneusement choisis pour soutenir une humeur positive et la santé cognitive.`,
-    icon: ArrowPathIcon,
+    icon: HandThumbUpIcon,
   },
   {
     name: 'Propre & Sûr',
     description:
       `égétalien, sans gluten et non-OGM, élaboré sans additifs ni conservateurs artificiels.`,
-    icon: FingerPrintIcon,
+    icon: GlobeAltIcon,
   },
 ]
 
