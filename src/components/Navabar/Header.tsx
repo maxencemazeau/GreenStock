@@ -9,6 +9,11 @@ import {
  
 export default function Header() {
   const [openNav, setOpenNav] = React.useState(false);
+
+
+  const panier = () => {
+   window.location.href = '/Panier';
+  }
  
   React.useEffect(() => {
     window.addEventListener(
@@ -25,7 +30,7 @@ export default function Header() {
         color="blue-gray"
         className="font-sans p-1 font-normal"
       >
-        <a href="#" className="flex items-center text-base font-sansl">
+        <a href="/" className="flex items-center text-base font-sansl">
           Accueil
         </a>
       </Typography>
@@ -69,6 +74,7 @@ export default function Header() {
               variant="filled"
               size="sm"
               className="hidden lg:inline-block bg-amber-400 text-black text-base"
+              onClick={panier}
             >
               <span className="">Mon panier</span>
             </Button>
