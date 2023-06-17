@@ -40,7 +40,7 @@ export default function Header() {
         color="blue-gray"
         className="font-sans p-1 font-normal"
       >
-        <a href="#" className="flex items-center text-base font-sans">
+        <a href="/Product" className="flex items-center text-base font-sans">
           Produits
         </a>
       </Typography>
@@ -64,7 +64,7 @@ export default function Header() {
           <Typography
             as="a"
             href="#"
-            className="mr-4 cursor-pointer py-1.5 font-bold text-xl"
+            className="font-sans mr-4 cursor-pointer py-1.5 font-bold text-xl"
           >
             GreenStock
           </Typography>
@@ -76,7 +76,7 @@ export default function Header() {
               className="hidden lg:inline-block bg-amber-400 text-black text-base"
               onClick={panier}
             >
-              <span className="">Mon panier</span>
+              <span className="font-sans">Mon panier</span>
             </Button>
             <IconButton
               variant="text"

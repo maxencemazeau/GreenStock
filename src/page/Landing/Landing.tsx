@@ -9,8 +9,8 @@ export default function Landing(){
     return(
         <>
             <HeroSection />
-            <BestSeller />
             <BulletPoint />
+            <BestSeller />
             <Collection />
         </>
     )
