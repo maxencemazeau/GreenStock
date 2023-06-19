@@ -5,11 +5,15 @@ import {
   Typography,
   Button,
   IconButton,
-  Card,
 } from "@material-tailwind/react";
  
 export default function Header() {
   const [openNav, setOpenNav] = React.useState(false);
+
+
+  const panier = () => {
+   window.location.href = '/Panier';
+  }
  
   React.useEffect(() => {
     window.addEventListener(
@@ -24,9 +28,9 @@ export default function Header() {
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-normal"
+        className="font-sans p-1 font-normal"
       >
-        <a href="#" className="flex items-center text-base">
+        <a href="/" className="flex items-center text-base font-sansl">
           Accueil
         </a>
       </Typography>
@@ -34,9 +38,9 @@ export default function Header() {
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-normal"
+        className="font-sans p-1 font-normal"
       >
-        <a href="#" className="flex items-center text-base">
+        <a href="/Product" className="flex items-center text-base font-sans">
           Produits
         </a>
       </Typography>
@@ -44,9 +48,9 @@ export default function Header() {
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-normal"
+        className="font-sans p-1 font-normal"
       >
-        <a href="#" className="flex items-center text-base">
+        <a href="/Profil" className="flex items-center text-base font-sans">
           Mon profil
         </a>
       </Typography>
@@ -60,7 +64,7 @@ export default function Header() {
           <Typography
             as="a"
             href="#"
-            className="mr-4 cursor-pointer py-1.5 font-bold text-lg"
+            className="font-sans mr-4 cursor-pointer py-1.5 font-bold text-xl"
           >
             GreenStock
           </Typography>
@@ -70,8 +74,9 @@ export default function Header() {
               variant="filled"
               size="sm"
               className="hidden lg:inline-block bg-amber-400 text-black text-base"
+              onClick={panier}
             >
-              <span>Mon panier</span>
+              <span className="font-sans">Mon panier</span>
             </Button>
             <IconButton
               variant="text"
@@ -114,38 +119,11 @@ export default function Header() {
         </div>
         <MobileNav open={openNav}>
           {navList}
-          <Button variant="filled" size="sm" fullWidth className="mb-2 bg-amber-400 text-black text-base">
+          <Button variant="filled" size="sm" fullWidth className="font-sans mb-2 bg-amber-400 text-black text-base">
             <span>Mon panier</span>
           </Button>
         </MobileNav>
-      </Navbar>
-      <div className="mx-auto max-w-screen-md py-12">
-        <Card className="mb-12 overflow-hidden">
-          <img
-            alt="nature"
-            className="h-[32rem] w-full object-cover object-center"
-            src="https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2717&q=80"
-          />
-        </Card>
-        <Typography variant="h2" color="blue-gray" className="mb-2">
-          What is Material Tailwind
-        </Typography>
-        <Typography color="gray" className="font-normal">
-          Can you help me out? you will get a lot of free exposure doing this
-          can my website be in english?. There is too much white space do less
-          with more, so that will be a conversation piece can you rework to make
-          the pizza look more delicious other agencies charge much lesser can
-          you make the blue bluer?. I think we need to start from scratch can my
-          website be in english?, yet make it sexy i&apos;ll pay you in a week
-          we don&apos;t need to pay upfront i hope you understand can you make
-          it stand out more?. Make the font bigger can you help me out? you will
-          get a lot of free exposure doing this that&apos;s going to be a chunk
-          of change other agencies charge much lesser. Are you busy this
-          weekend? I have a new project with a tight deadline that&apos;s going
-          to be a chunk of change. There are more projects lined up charge extra
-          the next time.
-        </Typography>
-      </div>
+      </Navbar>     
     </>
   );
 }
