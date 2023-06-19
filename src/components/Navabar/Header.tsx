@@ -50,7 +50,7 @@ export default function Header() {
         color="blue-gray"
         className="font-sans p-1 font-normal"
       >
-        <a href="#" className="flex items-center text-base font-sans">
+        <a href="/Profil" className="flex items-center text-base font-sans">
           Mon profil
         </a>
       </Typography>
