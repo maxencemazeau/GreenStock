@@ -6,12 +6,9 @@ export default function Information(){
 
    return(
 
-<<<<<<< HEAD
-=======
 
 
 
->>>>>>> 8b75c9bea6ca5e8260c28a02cd78aaf87d2ef90c
 <section className="bg-white m-O p-0">
  <div className="lg:grid lg:min-h-screen lg:grid-cols-12">
 
