@@ -6,7 +6,8 @@ import Header from './components/Navabar/Header';
 import Footer from './components/Navabar/Footer';
 import Landing from './page/Landing/Landing';
 import Cart from './page/Cart/Cart';
-
+import Product from './page/Product.tsx/Product';
+import Profil from './page/Profil/Profil';
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Landing />}></Route>
           <Route path="/Panier" element={<Cart />}></Route>
+          <Route path="/Product" element={<Product />}></Route>
+          <Route path="/Profil" element={<Profil />}></Route>
         </Routes>
       </Router>
 
