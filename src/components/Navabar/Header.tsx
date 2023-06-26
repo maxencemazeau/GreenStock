@@ -6,22 +6,26 @@ import {
   Button,
   IconButton,
 } from "@material-tailwind/react";
- 
+import Utilisateur from "../../interface/Utilisateur";
+
+
 export default function Header() {
   const [openNav, setOpenNav] = React.useState(false);
 
+  const utilisateur: Utilisateur[] | null = JSON.parse(sessionStorage.getItem('utilisateur') as string);
+
 
   const panier = () => {
-   window.location.href = '/Panier';
+    window.location.href = '/Panier';
   }
- 
+
   React.useEffect(() => {
     window.addEventListener(
       "resize",
       () => window.innerWidth >= 960 && setOpenNav(false)
     );
   }, []);
- 
+
   const navList = (
     <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
       <Typography
@@ -50,13 +54,39 @@ export default function Header() {
         color="blue-gray"
         className="font-sans p-1 font-normal"
       >
-        <a href="/Profil" className="flex items-center text-base font-sans">
-          Mon profil
-        </a>
+        {utilisateur === null ?
+           <div className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+           <Typography
+             as="li"
+             variant="small"
+             color="blue-gray"
+             className="font-sans p-1 font-normal"
+           >
+             <a href="/Connexion" className="flex items-center text-base font-sans">
+               S'inscrire
+             </a>
+           </Typography>
+           <Typography
+             as="li"
+             variant="small"
+             color="blue-gray"
+             className="font-sans p-1 font-normal"
+           >
+             <a href="/Connexion" className="flex items-center text-base font-sans">
+               Se connecter
+             </a>
+           </Typography>
+         </div>
+          :
+          <a href="/Profil" className="flex items-center text-base font-sans">
+            Mon profil
+          </a>
+        }
+
       </Typography>
     </ul>
   );
- 
+
   return (
     <>
       <Navbar className="sticky inset-0 z-10 h-max max-w-full rounded-none py-2 px-4 lg:px-8 lg:py-4">
@@ -123,7 +153,7 @@ export default function Header() {
             <span>Mon panier</span>
           </Button>
         </MobileNav>
-      </Navbar>     
+      </Navbar>
     </>
   );
 }
