@@ -8,6 +8,7 @@ import Landing from './page/Landing/Landing';
 import Cart from './page/Cart/Cart';
 import Product from './page/Product.tsx/Product';
 import Profil from './page/Profil/Profil';
+import InscriptionPage from './page/Connexion-Inscription/Inscription';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/Panier" element={<Cart />}></Route>
           <Route path="/Product" element={<Product />}></Route>
           <Route path="/Profil" element={<Profil />}></Route>
+          <Route path="/InscriptionPage" element={<InscriptionPage />}></Route>
         </Routes>
       </Router>
 

@@ -62,7 +62,7 @@ export default function Header() {
              color="blue-gray"
              className="font-sans p-1 font-normal"
            >
-             <a href="/Connexion" className="flex items-center text-base font-sans">
+             <a href="/InscriptionPage" className="flex items-center text-base font-sans">
                S'inscrire
              </a>
            </Typography>
